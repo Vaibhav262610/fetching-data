@@ -9,7 +9,7 @@ function ContentList() {
 
   useEffect(() => {
     // Fetch content when component mounts
-    fetch("http://localhost:3002/api/content?apiKey=06e401f5-fe18-4fb8-b2d0-6deca0054fa1")
+    fetch("https://cms-omega-eight.vercel.app/api/content?apiKey=06e401f5-fe18-4fb8-b2d0-6deca0054fa1")
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
